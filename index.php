@@ -62,6 +62,9 @@
 
 // Initialize global environment
 define('INDEX_FILE_LOCATION', __FILE__);
+
+putenv('PGSSLCERT=/htdocs/revistacontroversia-ensayo/certs/ojs.crt');
+putenv('PGSSLKEY=/htdocs/revistacontroversia-ensayo/certs/ojs.key');
 $application = require('./lib/pkp/includes/bootstrap.inc.php');
 
 // Serve the request
